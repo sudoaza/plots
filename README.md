@@ -4,6 +4,7 @@ Examples:
 
 plot_3d.py Plot functions in 3d
 hist.py Plot a histogram
+kmeans.py Find the k means and plot in 3D
 
 Generators (gen/):
 
