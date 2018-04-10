@@ -16,8 +16,6 @@ args = parser.parse_args()
 # Open file
 data = pd.read_csv(args.csv_file).as_matrix()
 
-args.upto = min(args.upto,data.shape[1])
-
 if args.components:
     args.components = min(args.components,data.shape[1])
     pca = PCA(n_components=args.components)
@@ -25,6 +23,7 @@ if args.components:
     myplots.scatter(transformed)
 
 else:
+    args.upto = min(args.upto,data.shape[1])
     pca = PCA(n_components=args.upto)
     pca.fit(data)
     plt.plot(pca.explained_variance_)
