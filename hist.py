@@ -8,7 +8,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("file", help="Data CSV file")
 parser.add_argument("-c","--column", type=int, help="Column of data to plot", default=0)
-parser.add_argument("-b","--buckets", help="Number of buckets", default=100)
+parser.add_argument("-b","--buckets", type=int, help="Number of buckets", default=100)
 parser.add_argument("-d","--deviations", type=float, help="Keep this many times the standard deviation, used for cliping the plot.", default=3)
 args = parser.parse_args()
 
