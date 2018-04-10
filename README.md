@@ -3,14 +3,15 @@ Collected mostly from tutorials.
 Plots:
 
 - [hist.py](hist.py) Plot a histogram
+- [hist2d.py](hist.py) Plot a histogram in 2d
 - [kmeans.py](kmeans.py) Find the K means and plot.
 - [pca.py](pca.py) Do Principal Component Analysis of the data and plot the 3 principal components.
 - [plot_3d.py](plot_3d.py) Plot functions in 3d
 
 Generators (gen/):
 
-- [random_normal.py](random_normal.py) Generate random data (1 feature, normal distribution)
-- [blobs.py](blobs.py) Generate random blobs (n features)
+- [random_normal.py](gen/random_normal.py) Generate random data (1 feature, normal distribution)
+- [blobs.py](gen/blobs.py) Generate random blobs (n features)
 
 Example Usage:
 
