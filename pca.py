@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+
 from sklearn.decomposition import PCA
 import myplots
 
@@ -14,7 +16,10 @@ args = parser.parse_args()
 # Open file
 data = pd.read_csv(args.csv_file).as_matrix()
 
+args.upto = min(args.upto,data.shape[1])
+
 if args.components:
+    args.components = min(args.components,data.shape[1])
     pca = PCA(n_components=args.components)
     transformed = pca.fit_transform(data)
     myplots.scatter(transformed)
