@@ -30,3 +30,8 @@ Example Usage:
 - Plot the principal components (Up to 3)
 
     python pca.py test.csv
+
+Resources:
+
+* https://mubaris.com/2017/10/01/kmeans-clustering-in-python/
+* https://plot.ly/ipython-notebooks/principal-component-analysis/
